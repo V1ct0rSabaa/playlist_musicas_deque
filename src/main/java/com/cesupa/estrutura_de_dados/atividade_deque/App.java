@@ -10,7 +10,7 @@ public final class App {
         StringBuilder textoMenu = new StringBuilder();
         textoMenu.append("1 - show all songs in playlist\n");
         textoMenu.append("2 - add song in the rear\n");
-        textoMenu.append("3 - add song in the back\n ");
+        textoMenu.append("3 - add song in the back\n");
         textoMenu.append("4 - remove song in the rear\n");
         textoMenu.append("5 - remove song in the back\n");
         textoMenu.append("6 - change song in the rear\n");

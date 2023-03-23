@@ -21,7 +21,8 @@ public final class Playlist {
     public String MostrarMusicas(){
         // StringBuilder é uma classe irmã da String que é mais eficiente para concatenar strings
         StringBuilder texto = new StringBuilder();
-        texto.append("Lista Completa de Músicas da Playlist:\n");
+        int tamanho = playlist.size();
+        texto.append("Lista Completa de " + tamanho + " Músicas da Playlist:\n");
         for(Musica musica: playlist){
             texto.append(musica.toString() + "\n");
         }
@@ -31,7 +32,7 @@ public final class Playlist {
     public void adicionarInicio(Musica m1){
         this.playlist.addFirst(m1);
     }
-    // Adicionar final
+    
     public void adicionarFim(Musica m1) {
         this.playlist.addLast(m1);
     }
@@ -43,18 +44,11 @@ public final class Playlist {
         return this.playlist.removeLast();
     }
 
-    public void pegarComeço() {
-        this.playlist.getFirst();
-    }
+    // public void pegarComeço() {
+    //     this.playlist.getFirst();
+    // }
 
-    public void pegarFinal() {
-        this.playlist.getLast(); 
-    }
-    /*
-     * C - AddFirst, addLast ou usar offer
-     * R - getFirst, getLast ou peek
-     * D - removeFirst, removeLast ou poll
-     * U - atualizarHead, atualizarTail
-     * D - removeFirst, removeLast ou poll
-     */
+    // public void pegarFinal() {
+    //     this.playlist.getLast(); 
+    // }
 }
